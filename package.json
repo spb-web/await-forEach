@@ -1,5 +1,5 @@
 {
-  "name": "promise-foreach",
+  "name": "await-foreach",
   "version": "0.0.1",
   "description": "async/await with forEach",
   "main": "promiseForEach.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spb-web/promise-forEach.git"
+    "url": "git+https://github.com/spb-web/await-forEach.git"
   },
   "keywords": [
     "async",

@@ -1,1 +1,6 @@
+# Install
+#### npm
+``` npm install --save promise-foreach ```
+#### yarn
+``` yarn add promise-foreach ```
 {{>main}}

@@ -1,6 +1,11 @@
-<a name="promiseForEach"></a>
+# Install
+#### npm
+``` npm install --save promise-foreach ```
+#### yarn
+``` yarn add promise-foreach ```
+<a name="awaitForEach"></a>
 
-## promiseForEach(array, asyncCallback) ⇒ <code>Promise</code>
+## awaitForEach(array, asyncCallback) ⇒ <code>Promise</code>
 Функция предназначена для асинхронного перебора массивов
 Очень удобно использовать с async/await
 
@@ -14,13 +19,21 @@
 **Example**  
 ```js
 // with async/await
-await promiseForEach([1, 2, 3], async (item, index, arr) => await Promise.resolve())
+const awaitForEach = require('promise-foreach')
+
+...
+
+await awaitForEach([1, 2, 3], async (item, index, arr) => await Promise.resolve())
 console.log('end')
 ```
 **Example**  
 ```js
 // with promise
-promiseForEach([1, 2, 3], (item, index, arr) => Promise.resolve()).then(() => {
+const awaitForEach = require('promise-foreach')
+
+...
+
+awaitForEach([1, 2, 3], (item, index, arr) => Promise.resolve()).then(() => {
   console.log('end')
 })
 ```

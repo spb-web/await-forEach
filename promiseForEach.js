@@ -1,5 +1,5 @@
 /**
- * @function promiseForEach
+ * @function awaitForEach
  * @description
  * Функция предназначена для асинхронного перебора массивов
  * Очень удобно использовать с async/await
@@ -11,19 +11,27 @@
  *
  * @example
  * // with async/await
- * await promiseForEach([1, 2, 3], async (item, index, arr) => await Promise.resolve())
+ * const awaitForEach = require('promise-foreach')
+ *
+ * ...
+ *
+ * await awaitForEach([1, 2, 3], async (item, index, arr) => await Promise.resolve())
  * console.log('end')
  *
  * @example
  * // with promise
- * promiseForEach([1, 2, 3], (item, index, arr) => Promise.resolve()).then(() => {
+ * const awaitForEach = require('promise-foreach')
+ *
+ * ...
+ *
+ * awaitForEach([1, 2, 3], (item, index, arr) => Promise.resolve()).then(() => {
  *   console.log('end')
  * })
  */
-async function promiseForEach(array, asyncCallback) {
+async function awaitForEach(array, asyncCallback) {
   for (let index = 0; index < array.length; index++) {
     await asyncCallback(array[index], index, array)
   }
 }
 
-module.exports = promiseForEach
+module.exports = awaitForEach
