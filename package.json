@@ -1,0 +1,25 @@
+{
+  "name": "promise-foreach",
+  "version": "0.0.1",
+  "description": "async/await with forEach",
+  "main": "promiseForEach.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc2md -c jsdoc2md/conf.json -f **/*.js -t jsdoc2md/README.bhs  > README.md; echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spb-web/promise-forEach.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "forEach"
+  ],
+  "author": "V.Ruzanov <spb.web@bk.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spb-web/promise-forEach/issues"
+  },
+  "homepage": "https://github.com/spb-web/promise-forEach#readme"
+}
