@@ -1,6 +1,22 @@
-# Install
+# async/await with forEach | Используем async/await с forEach
+
+## About | Что это
+Это функция для асинхронного перебора массивов
+
+Весь код представлен ниже. Можете его просто скопировать в свое приложение.
+Или можете установить с npm
+```js
+async function awaitForEach(array, asyncCallback) {
+  for (let index = 0; index < array.length; index++) {
+    await asyncCallback(array[index], index, array)
+  }
+}
+```
+
+## Install | Установка
 #### npm
 ``` npm install --save await-foreach ```
 #### yarn
 ``` yarn add await-foreach ```
+
 {{>main}}

@@ -2,7 +2,7 @@
   "name": "await-foreach",
   "version": "0.0.1",
   "description": "async/await with forEach",
-  "main": "promiseForEach.js",
+  "main": "awaitForEach.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "jsdoc2md -c jsdoc2md/conf.json -f **/*.js -t jsdoc2md/README.bhs  > README.md; echo"
