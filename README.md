@@ -1,8 +1,8 @@
 # Install
 #### npm
-``` npm install --save promise-foreach ```
+``` npm install --save await-foreach ```
 #### yarn
-``` yarn add promise-foreach ```
+``` yarn add await-foreach ```
 <a name="awaitForEach"></a>
 
 ## awaitForEach(array, asyncCallback) ⇒ <code>Promise</code>
